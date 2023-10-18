@@ -9,8 +9,12 @@ def even_list(int_list: List[int]) -> List[int]:
     A list of even integers.
     """
     # TODO: Implement even_list
-    pass
-
+    res = []
+    for i in int_list:
+        if i % 2 == 0:
+            res.append(i)
+    return res
+            
 # Skeleton code for sum_of_squares_of_even
 def sum_of_squares_of_even(even_int_list: List[int]) -> int:
     """
@@ -22,7 +26,7 @@ def sum_of_squares_of_even(even_int_list: List[int]) -> int:
     """
     # TODO: Implement sum_of_squares_of_even
     pass
-
+    
 # Main function
 def main():
     # Example list
@@ -30,7 +34,7 @@ def main():
     even_int_list = even_list(int_list)
     output = sum_of_squares_of_even(even_int_list)
     print(output)
-
 # Boilerplate code
 if __name__ == "__main__":
     main()
+
